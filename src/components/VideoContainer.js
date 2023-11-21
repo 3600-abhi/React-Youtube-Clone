@@ -10,9 +10,7 @@ function VideoContainer() {
 
     useEffect(() => {
         YOUTUBE_SERVICES.getVideos().then(data => {
-            console.log("data.iems =", data.items);
             setVideos(data.items);
-            console.log("videos =", videos);
         });
 
     }, []);

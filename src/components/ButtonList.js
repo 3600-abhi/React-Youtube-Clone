@@ -18,7 +18,7 @@ function ButtonList() {
     return (
         <div>
             {
-                buttonsText.map(text => <Button text={text} />)
+                buttonsText.map((text, index) => <Button key={index} text={text} />)
             }
         </div>
     );

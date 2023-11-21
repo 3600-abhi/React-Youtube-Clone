@@ -10,6 +10,17 @@ async function getVideos() {
     }
 }
 
+async function getSearchSuggestions(text) {
+    try {
+        const response = await axios.get(ServerConfig.YOUTUBE_SUGGESTIONS_API + `&q=${text}&format=5&alt=json`);
+
+        return response.data;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
 export default {
-    getVideos
+    getVideos,
+    getSearchSuggestions
 };
