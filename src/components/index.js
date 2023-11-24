@@ -8,6 +8,11 @@ import VideoContainer from "./VideoContainer";
 import VideoCard from "./VideoCard";
 import Button from "./Button";
 import WatchPage from "./WatchPage";
+import CommentContainer from "./CommentContainer";
+import Comment from "./Comment";
+import CommentList from "./CommentList";
+import LiveChat from "./LiveChat";
+import ChatMessage from "./ChatMessage";
 
 export {
     App,
@@ -19,5 +24,10 @@ export {
     VideoContainer,
     VideoCard,
     Button,
-    WatchPage
+    WatchPage,
+    CommentContainer,
+    Comment,
+    CommentList,
+    LiveChat,
+    ChatMessage
 }
